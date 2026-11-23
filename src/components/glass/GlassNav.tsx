@@ -57,10 +57,7 @@ export function GlassNav() {
       if (!wrap.current?.contains(event.target as Node)) setOpen(false)
     }
     const escape = (event: KeyboardEvent) => {
-      if (
-        event.key === 'Escape' &&
-        !(event.target instanceof HTMLSelectElement)
-      ) {
+      if (event.key === 'Escape') {
         setOpen(false)
         toggle.current?.focus()
       }

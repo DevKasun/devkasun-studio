@@ -32,7 +32,8 @@ export const site = {
     skip: 'Skip to content',
     navigation: 'Main navigation',
     theme: {
-      label: 'Color theme',
+      label: (current: string, next: string) =>
+        `Color theme is ${current}. Switch to ${next}.`,
       system: 'System',
       dark: 'Dark',
       light: 'Light',

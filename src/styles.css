@@ -1345,7 +1345,6 @@ form .btn {
   gap: 7px;
 }
 .theme-switch {
-  position: relative;
   display: grid;
   place-items: center;
   width: 38px;
@@ -1355,20 +1354,12 @@ form .btn {
   color: var(--color-body);
 }
 .theme-switch:hover,
-.theme-switch:has(select:focus-visible) {
+.theme-switch:focus-visible {
   background: light-dark(#ffffffa0, #ffffff19);
   color: var(--color-ink);
 }
-.theme-switch:has(select:focus-visible) {
-  outline: 3px solid light-dark(#ac4e27, #f39a74);
+.theme-switch:focus-visible {
   outline-offset: 1px;
-}
-.theme-switch select {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
 }
 .theme-dark,
 .theme-light,

@@ -1,7 +1,7 @@
 export const themeStorageKey = 'devkasun-theme'
 export const themeColors = { light: '#f3f1ec', dark: '#171719' } as const
 export const themeQuery = '(prefers-color-scheme: dark)'
-export const themes = ['system', 'dark', 'light'] as const
+export const themes = ['system', 'light', 'dark'] as const
 
 export type Theme = (typeof themes)[number]
 
