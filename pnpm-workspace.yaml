@@ -1,2 +1,8 @@
 allowBuilds:
   esbuild: true
+  workerd: false
+permissions:
+  '@tanstack/react-router':
+    skills: false
+  '@tanstack/react-start':
+    skills: false
