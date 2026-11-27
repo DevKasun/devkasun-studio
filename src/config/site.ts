@@ -215,7 +215,7 @@ export const site = {
     website: 'Website',
     newMessage: 'Send another enquiry',
   },
-  footer: { credit: 'Made with TanStack Start and three.js' },
+  footer: { credit: '' },
   legal: {
     privacy: {
       title: 'Privacy',
